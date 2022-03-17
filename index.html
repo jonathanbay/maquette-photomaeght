@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photomaeght-Capturer vos moments d'émotions</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="navbar">
+            <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <a href='#'> <img class="logo" src="./images/logo2.png" alt="logo"> </a>
+                    <li><a href='#'>Acceuil</a></li>
+                    <li><a href='#'>À propos</a></li>
+                    <li><a class='dropdown-arrow' href='#'>Portfolio</a>
+                        <ul class='sub-menus'>
+                            <li><a href='#'>Mariages</a></li>
+                            <li><a href='#'>Familles</a></li>
+                            <li><a href='#'>Enfants</a></li>
+                            <li><a href='#'>Evénementiel</a></li>
+                            <li><a href='#'>Animaux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><a href='#'>Galerie privée</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img src="./images/header1.jpg" alt="photos_mariage_intro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header2.jpg" alt="famille_intro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header4.jpg" alt="bebe_intro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header5.jpg" alt="mariage_intro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header3.jpg" alt="arrosoir_intro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header6.jpg" alt="alliance_intro">
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <main>
+        <section class="aPropos">
+            <h2>À propos</h2>
+            <div class="biographie">
+                <img class="photo" src="./images/photographe.jpg" alt="appareil_photos">
+
+                <div class="presentation">
+                    <img class="guillemet" src="./images/icones/guillemet.png" alt="">
+                    <p>À l'ecoute de vos envies, je serai vous mettre à l'aise et vous guider afin de photografier les plus beaux moments de votre vie...</p>
+                    <button type="submit">En savoir plus</button>
+                </div>   
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="categories">
+                <div class="cat1 aos-item"
+                    data-aos="flip-right"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/mariageCategorie.jpg" alt="photographe"> </a>
+                    <div class="overlay1">
+                        <div class="text1">Mariages</div>
+                    </div>
+                </div>
+                <div class="cat2 aos-item"
+                    data-aos="flip-left"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/familleCategorie.jpg" alt="famille"> </a>
+                    <div class="overlay2">
+                        <div class="text2">Familles</div>
+                    </div>
+                </div>
+                <div class="cat3 aos-item"
+                    data-aos="flip-right"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/enfantCategorie.jpg" alt="enfant"> </a>
+                    <div class="overlay3">
+                        <div class="text3">Enfants</div>
+                    </div>
+                </div>
+                <div class="cat4 aos-item"
+                    data-aos="flip-left"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/concertCategorie.jpg" alt="événementiel"> </a>
+                    <div class="overlay4">
+                        <div class="text4">Evénementiel</div>
+                    </div>
+                </div>
+                <div class="cat5 aos-item"
+                    data-aos="flip-right"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/animauxCategorie.jpg" alt="animaux"> </a>
+                    <div class="overlay5">
+                        <div class="text5">Animaux</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <h2 class="titre">Services</h2>
+        <section class="services">
+            <div class="conteneurServices">
+                <div class="cart aos-item"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="1500">
+                    <img src="./images/icones/iconAnts.png" alt="logo">
+                    <p>Photos conformes pour vos documents officiels, nous sommes agrée "agence national des titres sécurisés"...</p>
+                    <a href="#"><button class="bouton">En savoir plus</button></a>
+                    
+                </div>
+                <div class="cart aos-item"
+                    data-aos="zoom-out"
+                    data-aos-duration="1500">
+                    <img src="./images/icones/cadeau.png" alt="cadeau">
+                    <p>Offrez un cadeau qui reste!!! Réaliser une photo c'est mettre son quotidien en pause...</p>
+                    <a href="#"><button class="bouton">En savoir plus</button></a>
+                    
+                </div>
+                <div class="cart aos-item"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="1500">
+                    <img src="./images/icones/anciennePhoto.png" alt="photo">
+                    <p>Restauration de photos anciennes, redonnez vie à vos souvenirs d'antan...</p>
+                    <a href="#"><button class="bouton">En savoir plus</button></a>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="formulaire">
+                <h2>contactez-nous</h2>
+                <form>
+                    <input placeholder="Votre Nom">
+                    <input placeholder="Votre email">
+                    <input placeholder="Votre numéro de télephone">
+                    <textarea placeholder="votre message ici..."></textarea>
+                    <button class="btnForm">envoyer</button>
+                </form>
+            </div>          
+        </section>
+        
+        <footer>
+
+        </footer>
+            
+        
+            
+    </main>
+    
+
+
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
