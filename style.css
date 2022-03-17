@@ -159,18 +159,26 @@ html,
         font-size: 60px;
         color: #6d071a;
     }
-    .aPropos h2{
-        margin-bottom: 120px;
+    .aPropos h2 {
+        border-bottom: 2px solid #6d071a;
+        width: 200px;
+        margin: 120px auto;
     }
     .portfolio h2 {
-        margin-bottom: 80px;
-        padding-top: 30px;
+        padding-top: 10px;
+        border-bottom: 2px solid #6d071a;
+        width: 200px;
+        margin: 60px auto;
     }
     .titre {
-        margin-bottom: 80px;
+        border-bottom: 2px solid #6d071a;
+        width: 200px;
+        margin: 60px auto;
     }
     .contact h2 {
-        margin-bottom: 80px;
+        border-bottom: 2px solid #6d071a;
+        width: 340px;
+        margin: 60px auto;
     }
 /* ******************** style A propos ******************/
     .aPropos {
@@ -199,6 +207,7 @@ html,
         padding: 20px;
         position: absolute;
         right:120px;
+        transform: rotate(3deg);
     }
     .presentation p {
         font-size: 22px;
@@ -212,10 +221,9 @@ html,
         padding: 10px 5px;
         margin: 20px auto;
         border-radius: 5px;
-    }
-    .presentation a {
         text-decoration: none;
         color: #000;
+        font-size: 18px;
     }
     .enSavoirPlus:hover {
         color: white;
@@ -286,7 +294,7 @@ html,
         flex-flow: row wrap;
      }
     .cart {
-        height: 300px;     
+        height: 320px;     
         width: 250px;  
         display: flex;
         justify-content: center;
@@ -309,10 +317,10 @@ html,
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
     }
-    .cart .bouton {
+    /* .cart .bouton {
         margin: 0 30px;
         text-align: center;
-    }
+    } */
 /* *******************formulaire *****************  */
 
     form{
@@ -374,16 +382,19 @@ html,
         .photo {height: 350px; margin: auto 50px;}
         .biographie {position: static; justify-content: center;}
     }
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 615px){
         .photo{height:250px;}
+    }
+    @media screen and (max-width: 380px){
+        .photo{height:190px;}
     }
     @media screen and (max-width: 439px){
         .cart{width:320px;}
     }
     @media screen and (max-width: 809px){
-        .services{height: 650px;}
+        .services{height: 680px;}
     }
     @media screen and (max-width: 539px){
-        .services{height: 960px;}
+        .services{height: 1020px;}
         .cart {width:430px;}
     }
