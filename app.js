@@ -26,3 +26,18 @@ function updatemenu() {
     document.getElementById('menu').style.borderRadius = '0px';
   }
 }
+const bollezeele = [50.8666061, 2.3255062]
+
+// création de la map
+const map = L.map('carte').setView(bollezeele, 15);
+
+// création du calque images
+L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+  maxZoom: 20
+}).addTo(map);
+
+// ajout d'un marqueur
+const marker = L.marker(bollezeele).addTo(map);
+
+// ajout d'un popup
+marker.bindPopup('<h3>Studio Photomaeght</h3> <br> 7 Rue de l\'ancienne gare');

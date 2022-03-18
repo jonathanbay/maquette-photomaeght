@@ -153,7 +153,7 @@ html,
     }
 /* ******************* styles titre ************ */
 
-    .aPropos h2, .portfolio h2, .titre, .contact h2 {
+    .aPropos h2, .portfolio h2, .titre, .contact h2, .informations h2 {
         font-family: 'Dancing Script', cursive;
         text-align: center;
         font-size: 60px;
@@ -176,6 +176,11 @@ html,
         margin: 60px auto;
     }
     .contact h2 {
+        border-bottom: 2px solid #6d071a;
+        width: 340px;
+        margin: 60px auto;
+    }
+    .informations h2 {
         border-bottom: 2px solid #6d071a;
         width: 340px;
         margin: 60px auto;
@@ -317,10 +322,26 @@ html,
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
     }
-    /* .cart .bouton {
-        margin: 0 30px;
-        text-align: center;
-    } */
+   
+/* *******************Informations *****************  */
+#carte {
+    width: 500px;
+    height: 600px;
+    margin: 5px;
+}
+    .infos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .horaires {
+        height: 600px;
+        width: 500px;
+        background-color: whitesmoke;
+        margin: 5px;
+    }
+
 /* *******************formulaire *****************  */
 
     form{
