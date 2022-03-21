@@ -241,8 +241,6 @@ html,
     .btnPresentention {
         margin: auto;
     }
-    /* ****************essai ***************** */
-    
 /* *********************style portfolio *************** */
     .portfolio {
         margin: 150px 50px 80px 50px;
@@ -390,7 +388,7 @@ html,
     .tel {
         display: flex;
         align-items: center;
-        margin: 10px 20px;
+        margin: 0 20px;
         justify-content: center;
     }
     .icones {
@@ -478,7 +476,6 @@ html,
     }
     .containerFooter img {
         height: 100px;
-
     }
 /* *******************responsive *****************  */
     
@@ -501,23 +498,47 @@ html,
             width: 80%;
             position: static;
         }
+        .navbar {margin: 0;}
         .portfolio {margin-top: 50px;}
         .photo {height: 350px; margin: auto 50px;}
         .biographie {position: static; justify-content: center;}
+        .portfolio p, .formulaire p, .portfolio h3 {
+            font-size: 30px;
+            margin: 5px 100px 50px 100px;
+        }
     }
     @media screen and (max-width: 615px){
         .photo{height:250px;}
+        .portfolio p, .formulaire p, .portfolio h3 {
+            font-size: 25px;
+            margin: 5px 30px 50px 30px;
+        }
+        .containerFooter p {font-size: 15px;}
+        .fa-brands, .fa-solid{font-size: 20px; margin: 0 10px;}
+        .containerFooter img {height: 70px;}
     }
     @media screen and (max-width: 380px){
         .photo{height:190px;}
     }
     @media screen and (max-width: 439px){
         .cart{width:320px;}
+        .horaires, #carte {height: 580px;}
+        .portfolio p, .formulaire p, .portfolio h3 {
+            font-size: 25px;
+            margin: 5px 10px 50px 10px;
+        }
+
     }
     @media screen and (max-width: 809px){
         .services{height: 680px;}
+        .containerFooter p {font-size: 20px;}
+        .fa-brands, .fa-solid{font-size: 25px;}
+        .containerFooter img {height: 90px;}
     }
     @media screen and (max-width: 539px){
         .services{height: 1020px;}
         .cart {width:430px;}
+    }
+    @media screen and (max-width: 539px){
+        .horaires, #carte {height: 600px;}
     }
