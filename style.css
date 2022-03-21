@@ -25,8 +25,9 @@ html,
         margin: 0 30px;
     }
     #menu {
-        /* background: #FFFFFF; */
+        /* background: whitesmoke; */
         color: #000;
+        font-weight: 700;
         height: 100px;
         padding-left: 18px;
         border-radius: 0px;
@@ -48,6 +49,7 @@ html,
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     #menu li {
         float: right;
@@ -58,17 +60,17 @@ html,
     #menu a {
         display: block;
         line-height: 40px;
-        
         text-decoration: none;
         color: #000;
         font-size: 22px;
+        transition: 0.5;
     }
     #menu a.dropdown-arrow:after {
         content: "\2B9F";
         margin-left: 5px;
     }
     #menu li a:hover {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid black;
     }
     
     
@@ -202,6 +204,8 @@ html,
         height: 400px;
         margin: auto 50px;
         transform: rotate(-10deg);
+        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+        border-radius: 47px 0px; 
     }
     .guillemet {
         height: 30px;
@@ -236,12 +240,30 @@ html,
     }
     .btnPresentention {
         margin: auto;
-
     }
+    /* ****************essai ***************** */
+    
 /* *********************style portfolio *************** */
     .portfolio {
         margin: 150px 50px 80px 50px;
     }
+    .portfolio h3 {
+        font-size: 35px;
+        margin-left: 150px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .portfolio p, .formulaire p {
+        font-size: 35px;
+        margin: 5px 150px 50px 150px;
+        text-align: justify;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: 'Dancing Script', cursive;
+    }
+    .portfolio p::first-letter, .formulaire p::first-letter {
+        font-size: 35px;
+        color: #6d071a;
+      }
+
     .categories {
         display: flex;
         justify-content: center;
@@ -253,6 +275,8 @@ html,
         height: 350px;
         margin: 10px;
         position: relative;
+        /* border: 1px solid whitesmoke; */
+        box-shadow: 0px 0px 19px 2px whitesmoke;
     }
     .cat1 img, .cat2 img, .cat3 img, .cat4 img, .cat5 img {
         height: 100%;
@@ -284,6 +308,11 @@ html,
     }
     .cat1:hover .text1, .cat2:hover .text2, .cat3:hover .text3, .cat4:hover .text4, .cat5:hover .text5 {
         opacity: 1;
+    }
+    .cat1 img::after {
+        content: "";
+        border: 1px solid white;
+        transform: translateX(10px);
     }
 /* *******************style service *****************  */
 
@@ -327,9 +356,11 @@ html,
    
 /* *******************Informations *****************  */
 #carte {
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 520px;
     margin: 5px;
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
 }
     .infos {
         display: flex;
@@ -338,10 +369,11 @@ html,
         flex-flow: row wrap;
     }
     .horaires {
-        height: 600px;
-        width: 500px;
+        height: 520px;
+        width: 450px;
         background-color: rgba(245, 245, 245, 0.63);
-        margin: 10px;
+        box-shadow: -10px 15px 25px 0 rgba(0, 0, 0, 0.637);
+        border-radius: 5px;
     }
     .horaires h3 {
         font-size: 22px;
@@ -349,15 +381,17 @@ html,
         text-decoration: underline;
     }
     .horaires p {
-        font-size: 20px;
+        font-size: 25px;
         margin: 20px;
-        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: 'Dancing Script', cursive;
         text-align: center;
     }
     .tel {
         display: flex;
         align-items: center;
-        margin: 20px 20px 0 20px;
+        margin: 10px 20px;
+        justify-content: center;
     }
     .icones {
         display: flex;
@@ -421,8 +455,30 @@ html,
         width: 500px;
     }
 /* *******************footer *****************  */
-    footer {
-        height: 200px;
+    .containerFooter {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.425);
+        margin-top: 50px;
+    }
+    .containerFooter a {
+        text-decoration: none;
+    }
+    .containerFooter p {
+        font-size: 25px;
+        color: whitesmoke;
+    }
+    .fa-brands, .fa-solid{
+        font-size: 30px;
+        margin: 0 20px;
+        color: whitesmoke;
+    }
+    .containerFooter img {
+        height: 100px;
+
     }
 /* *******************responsive *****************  */
     
@@ -430,7 +486,7 @@ html,
         #menu {position:relative}
         #menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
         #menu ul.sub-menus {width:100%;position:static;}
-        #menu ul.sub-menus a {padding-left:30px;}
+        #menu ul.sub-menus a {padding-left:3 0px;}
         #menu li {display:block;float:none;width:auto;}
         .logo {display: none;}
         #menu input, #menu label {position:absolute;display:flex;align-content: center;}
@@ -439,7 +495,7 @@ html,
         #menu input:checked + label:before {content:"\00d7"}
         #menu input:checked ~ ul {display:block}
     }
-    @media screen and (max-width: 1048px){
+    @media screen and (max-width: 1105px){
         .presentation {
             margin: 50px 0 0 0;
             width: 80%;
