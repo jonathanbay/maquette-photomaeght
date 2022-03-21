@@ -8,21 +8,24 @@ html,
     }
     body {
         /* background: #fff;  */
-        background-color: #f9e4b7;
+        /* background-color: #f9e4b7; */
         /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
         font-size: 14px;
         color: #000;
         margin: 0;
         padding: 0;
         overflow-x: hidden; 
+        background: url(./images/bg.jpg) center/cover;
     }
     
     
 
 /* ******************** navbar ********************  */
-
+    .navbar {
+        margin: 0 30px;
+    }
     #menu {
-        background: #FFFFFF;
+        /* background: #FFFFFF; */
         color: #000;
         height: 100px;
         padding-left: 18px;
@@ -128,7 +131,7 @@ html,
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        /* background: #fff; */
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -192,13 +195,12 @@ html,
     .biographie{
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: space-evenly;
         flex-flow: row wrap;
-        position: relative;
     }
     .photo {
         height: 400px;
-        margin-left: 170px;
+        margin: auto 50px;
         transform: rotate(-10deg);
     }
     .guillemet {
@@ -207,17 +209,15 @@ html,
     .presentation {
         width: 30%;
         margin: auto 50px;
-        background-color: whitesmoke;
+        background-color: rgba(245, 245, 245, 0.63);
         border-radius: 5px;
         padding: 20px;
-        position: absolute;
-        right:120px;
-        transform: rotate(3deg);
     }
     .presentation p {
         font-size: 22px;
         margin-bottom: 50px;
         font-family: 'Montserrat', sans-serif;
+        
     }
     .enSavoirPlus {
         border: 1px solid black;
@@ -233,6 +233,10 @@ html,
     .enSavoirPlus:hover {
         color: white;
         background-color: #000;
+    }
+    .btnPresentention {
+        margin: auto;
+
     }
 /* *********************style portfolio *************** */
     .portfolio {
@@ -267,8 +271,6 @@ html,
     .text1, .text2, .text3, .text4, .text5 {
         border-bottom: 2px solid white;
         border-left: 2px solid white;
-        /* background-color: rgba(0, 0, 0, 0.548); */
-        /* background: linear-gradient(to top right, #ffffffaf 0%, #000000a1 50%); */
         background: linear-gradient(to top right, #ffffffb4 20%, #000000b2 66%);
         font-family: 'Montserrat', sans-serif;
         color: white;
@@ -338,9 +340,46 @@ html,
     .horaires {
         height: 600px;
         width: 500px;
-        background-color: whitesmoke;
-        margin: 5px;
+        background-color: rgba(245, 245, 245, 0.63);
+        margin: 10px;
     }
+    .horaires h3 {
+        font-size: 22px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .horaires p {
+        font-size: 20px;
+        margin: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .tel {
+        display: flex;
+        align-items: center;
+        margin: 20px 20px 0 20px;
+    }
+    .icones {
+        display: flex;
+        flex-direction: column;
+    }
+    .tel img, .facebook {
+        width: 40px;
+        height: 40px;
+    }
+    .paragraphe2 {
+        color: red;
+    }
+    .facebook {
+        margin: 10px 0 0 25px;
+        width: 35px;
+        height: 35px;
+    }
+    .facebook:hover {
+        color: green;
+        transform: scale(1.1);
+    }
+    
 
 /* *******************formulaire *****************  */
 
@@ -373,6 +412,13 @@ html,
         color: #fffae1;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+    }
+/* ********************* services ************* */
+    .carte_cadeau {
+        width: 500px;
+    }
+    .photo_ancienne {
+        width: 500px;
     }
 /* *******************footer *****************  */
     footer {

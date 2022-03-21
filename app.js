@@ -29,7 +29,7 @@ function updatemenu() {
 const bollezeele = [50.8666061, 2.3255062]
 
 // création de la map
-const map = L.map('carte').setView(bollezeele, 15);
+const map = L.map('carte').setView(bollezeele, 16);
 
 // création du calque images
 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
