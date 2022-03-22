@@ -515,10 +515,9 @@ html,
         .containerFooter p {font-size: 15px;}
         .fa-brands, .fa-solid{font-size: 20px; margin: 0 10px;}
         .containerFooter img {height: 70px;}
-        .swiper-slide img {
-            height: 80%;
-        }
+        .swiper-slide img {height: 80%;}
         .swiper {height: 60vh;}
+        #carte {height:400px; margin-bottom: 20px;}
    }
     @media screen and (max-width: 380px){
         .photo{height:190px;}
